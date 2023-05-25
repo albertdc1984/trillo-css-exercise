@@ -6,10 +6,9 @@
   "scripts": {
     "watch": "node-sass sass/main.scss css/style.css -w",
     "compile": "node-sass sass/main.scss css/style.comp.css",
-    "concat": "concat -o css/style.concat.css css/icon-style.css css/style.comp.css",
     "prefix": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css",
     "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build": "npm-run-all compile concat prefix compress"
+    "build": "npm-run-all compile prefix compress"
   },
   "repository": {
     "type": "git",
