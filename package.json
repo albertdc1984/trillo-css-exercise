@@ -1,0 +1,30 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "This is my version of the 2nd exercise in Udemy's Advanced CSS and Sass course by Jonas Schmedtmann",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "concat": "concat -o css/style.concat.css css/icon-style.css css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile concat prefix compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertdc1984/trillo-css-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertdc1984/trillo-css-exercise/issues"
+  },
+  "homepage": "https://github.com/albertdc1984/trillo-css-exercise#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "postcss-cli": "^10.1.0"
+  }
+}
