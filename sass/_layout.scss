@@ -7,6 +7,10 @@
   min-height: 50rem;
 }
 .header {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
@@ -17,11 +21,9 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
-  height: 50rem;
 }
 .hotel-view {
   background-color: #fff;
   background-color: orangered;
   flex: 1;
-  height: 50rem;
 }
